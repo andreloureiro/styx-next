@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Source Code Pro', sans-serif;
+  background-color: #263238;
+}
+
+#app {
+  display: block;
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.styx {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.styx__title {
+  margin: 10px;
+}
+
+.styx__history {
+  display: flex;
+  flex: 1;
+    overflow-y: auto;
+}
+
+.styx__history .history__box {
+  width: 100%;
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.styx__history .history__item {
+  width: 100%;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.styx__history .history__item .item__form {
+  color: rgba(255, 255, 255, 0.2);
+}
+.styx__history .history__item .item__value {
+  margin-top: 10px;
+  word-break: break-word;
+  font-size: 2em;
+}
+.styx__history .history__item.history__item--success .item__value {
+  color: #03A9F4;
+}
+.styx__history .history__item.history__item--error .item__value{
+  font-size: 1.2em;
+  color: #F44336;
+}
+.styx__history .history__item.history__item--success .item__value.item__value--large {
+  font-size: 1em;
+}
+
+.styx__input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.styx__input-area .input-area__prompt {
+  margin: 0 1em 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.styx__input-area .input-area__input {
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 0.6px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #03A9F4;
+  outline: none;
+}
