@@ -2,6 +2,7 @@
 
 A WIP simple ClojureScript REPL built with [Om Next](https://github.com/omcljs/om) + [Replumb](https://github.com/ScalaConsultants/replumb).
 
+You can try it at [https://andreloureiro.net/styx/](https://andreloureiro.net/styx/)
 
 ## License
 
