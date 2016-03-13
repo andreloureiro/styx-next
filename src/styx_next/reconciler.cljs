@@ -3,4 +3,4 @@
             [styx-next.parser :refer [parser]]
             [styx-next.state :refer [initial-state]]))
 
-(def reconciler (om/reconciler {:state initial-state :parser parser}))
+(defonce reconciler (om/reconciler {:state initial-state :parser parser}))

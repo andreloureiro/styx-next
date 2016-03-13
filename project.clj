@@ -8,8 +8,7 @@
                  [org.clojure/clojurescript "1.7.170"]
                  [org.omcljs/om "1.0.0-alpha22"]
                  [replumb "0.1.2"]
-                 [figwheel-sidecar "0.5.0" :exclusions [[joda-time][org.clojure/tools.reader]]]
-                 [parinfer "0.2.0"]]
+                 [figwheel-sidecar "0.5.0" :exclusions [[joda-time][org.clojure/tools.reader]]]]
 
   :plugins [[lein-cljsbuild "1.1.1"]
             [lein-figwheel "0.5.0" :exclusions [[joda-time]
